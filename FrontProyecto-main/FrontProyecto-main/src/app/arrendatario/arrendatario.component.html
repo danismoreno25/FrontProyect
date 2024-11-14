@@ -1,0 +1,63 @@
+<div class="main-container">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Buscar Propiedades</a>
+            <a href="#">Publicar Propiedad</a>
+            <a href="#">Contacto</a>
+        </div>
+        <button class="register-btn">Registrarse</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Encuentra la propiedad de tus sueños</h1>
+
+        <form [formGroup]="searchForm">
+            <div class="search-box">
+                <select formControlName="propertyType">
+                    <option value="">Tipo de Propiedad</option>
+                    <option *ngFor="let type of propertyTypes">{{type}}</option>
+                </select>
+
+                <select formControlName="condition">
+                    <option value="">Condición</option>
+                    <option *ngFor="let condition of conditions">{{condition}}</option>
+                </select>
+
+                <input type="text" formControlName="location" placeholder="Ciudad, Zona o Barrio">
+
+                <button (click)="onSearch()" class="search-btn">Buscar</button>
+            </div>
+
+            <!-- Property Search Section -->
+            <div class="property-search-section">
+                <h2>Búsqueda Avanzada de Propiedades</h2>
+
+                <div class="search-criteria">
+                    <div class="radio-group">
+                        <label>
+                            <input type="checkbox" formControlName="searchCriteriaNombre">
+                            Por Nombre
+                        </label>
+                        <label>
+                            <input type="checkbox" formControlName="searchCriteriaMunicipio" value="municipio">
+                            Por Municipio
+                        </label>
+                        <label>
+                            <input type="checkbox" formControlName="searchCriteriaCapacidad" value="capacidad">
+                            Por Capacidad
+                        </label>
+                    </div>
+
+                    <div class="search-input-group">
+                        <input type="text" formControlName="searchText" placeholder="Ingrese su búsqueda">
+                        <button (click)="onSearch()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>

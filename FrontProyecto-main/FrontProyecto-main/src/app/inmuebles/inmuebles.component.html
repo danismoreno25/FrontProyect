@@ -1,0 +1,43 @@
+<div class="main-container">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Buscar Propiedades</a>
+            <a href="#">Publicar Propiedad</a>
+            <a href="#">Contacto</a>
+        </div>
+        <button class="register-btn">Registrarse</button>
+    </nav>
+    <div id="table-container">
+        <div class="contenedor-tabla">
+            <table id="tabla-mascotas-header" class="tabla-propiedades">
+                <thead>
+                    <tr>
+                        <th class="row-0-h">Direccion</th>
+                        <th class="row-1-h">Descripcion</th>
+                        <th class="row-2-h">Precio</th>
+                        <th class="row-3-h">Eestado</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="contenedor-tabla">
+            <ng-container *ngFor="let propiedad of propiedadesPrueba">
+                <table id="tabla-propiedades-body" class="tabla-propiedades">
+                    <ng-container *ngIf="propiedad">
+                        <tbody>
+                            <tr>
+                                <td class="row-0-v">{{propiedad.direccion}}</td>
+                                <td class="row-1-v">{{propiedad.descripcion}}</td>
+                                <td class="row-2-v">{{propiedad.precio}}</td>
+                                <td class="row-3-v">{{propiedad.estado}} </td>
+                            </tr>
+                        </tbody>
+                    </ng-container>
+                </table>
+            </ng-container>
+        </div>
+
+    </div>
+
+</div>
