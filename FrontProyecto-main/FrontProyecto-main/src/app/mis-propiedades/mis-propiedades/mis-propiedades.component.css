@@ -1,0 +1,18 @@
+.mis-propiedades-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .propiedad {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  

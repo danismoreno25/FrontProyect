@@ -1,0 +1,80 @@
+/* Contenedor principal */
+.arrendador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal */
+  .arrendador-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Botones */
+  .arrendador-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .arrendador-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de propiedades */
+  .property-list {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .property-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .property-item h3 {
+    font-size: 1.5em;
+    color: #555;
+  }
+  
+  .property-item p {
+    font-size: 1em;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Input y select */
+  .arrendador-container input[type="text"],
+  .arrendador-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Mensajes */
+  .message {
+    font-size: 1em;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  

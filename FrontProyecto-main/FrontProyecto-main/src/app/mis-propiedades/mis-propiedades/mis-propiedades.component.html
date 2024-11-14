@@ -1,0 +1,11 @@
+<div class="mis-propiedades-container">
+    <h2>Mis propiedades</h2>
+    <div *ngFor="let propiedad of propiedades" class="propiedad">
+      <h3>{{ propiedad.nombre }}</h3>
+      <p><strong>Dirección:</strong> {{ propiedad.direccion }}</p>
+      <p><strong>Precio:</strong> {{ propiedad.precio | currency }}</p>
+      <button (click)="editarPropiedad(propiedad)">Editar</button>
+      <button (click)="eliminarPropiedad(propiedad)">Eliminar</button>
+    </div>
+  </div>
+  
